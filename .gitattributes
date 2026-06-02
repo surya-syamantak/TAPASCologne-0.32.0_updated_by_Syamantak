@@ -1,0 +1,4 @@
+*.xml filter=lfs diff=lfs merge=lfs -text
+cologne.poly.xml filter=lfs diff=lfs merge=lfs -text
+cologne.trips.xml filter=lfs diff=lfs merge=lfs -text
+cologne.net.xml filter=lfs diff=lfs merge=lfs -text

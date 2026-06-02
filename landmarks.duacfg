@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Apr 10 15:17:20 2018 by SUMO duarouter Version v0_32_0+1044-0722ada
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="cologne.net.xml"/>
+        <route-files value="dummy.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="dummy.rou.xml"/>
+    </output>
+
+    <processing>
+        <astar.landmark-distances value="cologne_landmarks.txt"/>
+        <astar.save-landmark-distances value="cologne_landmark_distances.txt"/>
+    </processing>
+
+</configuration>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="osmNetconvert.typ.xml,osmNetconvertUrbanDe.typ.xml"/>
+        <osm-files value="cologne.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="cologne.net.xml"/>
+    </output>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="false"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.by-vclass value="passenger"/>
+        <remove-edges.isolated value="true"/>
+        <remove-edges.by-type value="highway.track,highway.services"/>
+        <keep-edges.components value="1"/>
+    </edge_removal>
+
+    <processing>
+        <no-internal-links value="true"/>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+        <junctions.join value="true"/>
+    </processing>
+
+</configuration>
